@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A0663801B4E47C10010122C /* PopUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A06637F1B4E47C10010122C /* PopUtils.m */; };
 		4AFE405C1B4E3D750022C81E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFE405B1B4E3D750022C81E /* main.m */; };
 		4AFE405F1B4E3D750022C81E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFE405E1B4E3D750022C81E /* AppDelegate.m */; };
 		4AFE40621B4E3D750022C81E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFE40611B4E3D750022C81E /* ViewController.m */; };
@@ -14,7 +15,6 @@
 		4AFE40671B4E3D750022C81E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AFE40661B4E3D750022C81E /* Images.xcassets */; };
 		4AFE406A1B4E3D750022C81E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AFE40681B4E3D750022C81E /* LaunchScreen.xib */; };
 		4AFE40761B4E3D750022C81E /* ZJPopEaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFE40751B4E3D750022C81E /* ZJPopEaseTests.m */; };
-		4AFE40811B4E3E090022C81E /* PopUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFE40801B4E3E090022C81E /* PopUtils.m */; };
 		525696DE13386312AFC1E682 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05510515AD3FB35701C4D70E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +31,8 @@
 /* Begin PBXFileReference section */
 		05510515AD3FB35701C4D70E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1531B52DF7196328FC6DA070 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		4A06637E1B4E47C10010122C /* PopUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUtils.h; sourceTree = "<group>"; };
+		4A06637F1B4E47C10010122C /* PopUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUtils.m; sourceTree = "<group>"; };
 		4AFE40561B4E3D750022C81E /* ZJPopEase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJPopEase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AFE405A1B4E3D750022C81E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AFE405B1B4E3D750022C81E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,8 +46,6 @@
 		4AFE406F1B4E3D750022C81E /* ZJPopEaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJPopEaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AFE40741B4E3D750022C81E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AFE40751B4E3D750022C81E /* ZJPopEaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJPopEaseTests.m; sourceTree = "<group>"; };
-		4AFE407F1B4E3E090022C81E /* PopUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUtils.h; sourceTree = "<group>"; };
-		4AFE40801B4E3E090022C81E /* PopUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUtils.m; sourceTree = "<group>"; };
 		E475D4E3D6EEA319CFA557A4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +68,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A06637D1B4E47C10010122C /* scr */ = {
+			isa = PBXGroup;
+			children = (
+				4A06637E1B4E47C10010122C /* PopUtils.h */,
+				4A06637F1B4E47C10010122C /* PopUtils.m */,
+			);
+			path = scr;
+			sourceTree = "<group>";
+		};
 		4AFE404D1B4E3D750022C81E = {
 			isa = PBXGroup;
 			children = (
@@ -91,8 +100,7 @@
 		4AFE40581B4E3D750022C81E /* ZJPopEase */ = {
 			isa = PBXGroup;
 			children = (
-				4AFE407F1B4E3E090022C81E /* PopUtils.h */,
-				4AFE40801B4E3E090022C81E /* PopUtils.m */,
+				4A06637D1B4E47C10010122C /* scr */,
 				4AFE405D1B4E3D750022C81E /* AppDelegate.h */,
 				4AFE405E1B4E3D750022C81E /* AppDelegate.m */,
 				4AFE40601B4E3D750022C81E /* ViewController.h */,
@@ -284,7 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AFE40621B4E3D750022C81E /* ViewController.m in Sources */,
-				4AFE40811B4E3E090022C81E /* PopUtils.m in Sources */,
+				4A0663801B4E47C10010122C /* PopUtils.m in Sources */,
 				4AFE405F1B4E3D750022C81E /* AppDelegate.m in Sources */,
 				4AFE405C1B4E3D750022C81E /* main.m in Sources */,
 			);
